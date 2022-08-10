@@ -1,7 +1,5 @@
 package codingTest_LV1;
 
-import java.util.Arrays;
-
 public class proLevel1_x만큼간격이있는n개의숫자 {
 
 	public static void main(String[] args) {
