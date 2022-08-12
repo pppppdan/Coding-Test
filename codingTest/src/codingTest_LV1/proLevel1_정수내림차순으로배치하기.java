@@ -32,6 +32,27 @@ public class proLevel1_정수내림차순으로배치하기 {
         System.out.println(answer);
         
         return answer;
+        
+        
+        /*
+         * 
+         * long answer = 0;
+      
+	      String str = Long.toString(n);
+	      Integer[] arr = new Integer[str.length()];
+	      
+	      for (int i = 0; i < str.length(); i++) {
+	         arr[i] = str.charAt(i) - '0';
+	      }
+	      
+	      Arrays.sort(arr, Collections.reverseOrder());
+	
+	      for (int i = 0; i < arr.length; i++) {
+	         answer += arr[i] * Math.pow(10, arr.length - 1 - i);
+	      }
+	      
+	      return answer;
+         */
     }
 
 }
