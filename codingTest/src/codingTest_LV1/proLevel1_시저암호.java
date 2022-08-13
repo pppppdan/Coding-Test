@@ -3,8 +3,8 @@ package codingTest_LV1;
 public class proLevel1_시저암호 {
 
 	public static void main(String[] args) {
-		String s = "C";
-		int n = 25;
+		String s = "AB";
+		int n = 1;
 		
 		solution(s, n);
 	}
@@ -17,14 +17,14 @@ public class proLevel1_시저암호 {
         	ch = s.charAt(i);
         	
         	if (ch == ' ') {
-				answer += ch;
+				answer += " ";
 				continue;
 			} 
         	
-        	if (ch >= 'a' && ch <= 'z') {
-				answer += ch + n > 'z' ? (char) (ch - 26 + n) : (char) (ch + n);
-			} else {
-				answer += ch + n > 'Z' ? (char) (ch - 26 + n) : (char) (ch + n);
+        	if (ch >= 'a' && ch <= 'z') { //소문자
+				answer += ch + n > 'z' ? (char) (ch + n - 26) : (char) (ch + n);
+			} else { //대문자
+				answer += ch + n > 'Z' ? (char) (ch + n - 26) : (char) (ch + n);
 			}
 		}
         
