@@ -11,6 +11,11 @@ public class proLevel1_같은숫자는싫어 {
 		solution(arr);
 	}
 	
+	
+	/*
+	 * ArrayList 데이터 검색에 유리
+	 * LinkedList 데이터 추가/삭제에 유리
+	 */
 	public static int[] solution(int[] arr) {
         List<Integer> list = new LinkedList<>();
         list.add(arr[0]);

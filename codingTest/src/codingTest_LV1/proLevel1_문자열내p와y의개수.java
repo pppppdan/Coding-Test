@@ -10,9 +10,10 @@ public class proLevel1_문자열내p와y의개수 {
 	
 	static boolean solution(String s) {
         boolean answer = false;
-        s = s.toUpperCase();
         int pCnt = 0;
         int yCnt = 0;
+        
+        s = s.toUpperCase();
         
         for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) == 'P') {
