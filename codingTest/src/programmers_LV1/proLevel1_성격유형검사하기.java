@@ -57,6 +57,7 @@ public class proLevel1_성격유형검사하기 {
 			}
 		}
 		
+		System.out.println(Arrays.toString(character));
 		System.out.println(Arrays.toString(characterScore));
 		
 		StringBuilder sb = new StringBuilder();
@@ -68,10 +69,8 @@ public class proLevel1_성격유형검사하기 {
 				sb.append(character[i + 1]);
 			}
 		}
-		
-		String answer = sb.toString();
         
-        return answer;
+        return sb.toString();
     }
 
 }
