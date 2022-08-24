@@ -14,7 +14,7 @@ public class 기본수학2_소수구하기 {
 		int M = Integer.parseInt(st.nextToken());
 		int N = Integer.parseInt(st.nextToken());
 		
-		/* 
+		/*
 		int[] arr = new int[N + 1];
 		int idx = M;
 		
@@ -42,7 +42,9 @@ public class 기본수학2_소수구하기 {
 		}
 		*/
 		
+		
 		//좋은 코딩
+		//boolean 배열은 false로 초기화 됨
 		boolean[] arr = new boolean[N + 1];
 		arr[0] = arr[1] = true;
 		
@@ -67,6 +69,7 @@ public class 기본수학2_소수구하기 {
 		System.out.println(sb);
 		
 		br.close();
+		
 	}
 
 }
