@@ -3,10 +3,10 @@ package programmers_LV1;
 public class proLevel1_신규아이디추천 {
 
 	public static void main(String[] args) {
-		//String new_id = "...!@BaT#*..y.abcdefghijklm";
+		String new_id = "...!@BaT#*..y.abcdefghijklm";
 		//String new_id = "abcdefghijklmn.p";
 		//String new_id = "z-+.^.";
-		String new_id = "=.=";
+		//String new_id = "=.=";
 		
 		solution(new_id);
 	}
@@ -15,7 +15,7 @@ public class proLevel1_신규아이디추천 {
 		StringBuilder sb = new StringBuilder();
 		
 		//1 ~ 4단계
-		sb.append(new_id.toLowerCase().replaceAll("[^\\w\\-_.]", "").replaceAll("\\.+", ".").replaceAll("^[.]|[.]$", ""));
+		sb.append(new_id.toLowerCase().replaceAll("[^-_.a-z0-9]", "").replaceAll("[.]+", ".").replaceAll("^[.]|[.]$", ""));
 		
 		System.out.println(sb.toString());
 		
