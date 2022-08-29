@@ -16,14 +16,14 @@ public class 기본수학1_손익분기점 {
 		int B = Integer.parseInt(st.nextToken());
 		int C = Integer.parseInt(st.nextToken());
 		
-		double n = 0;
+		int n = 0;
 		
 		if (B >= C) {
 			System.out.println(-1);
 		} else {
 			n = A / (C - B) + 1; 
 			
-			System.out.printf("%.0f\n", n);
+			System.out.println(n);
 		}
 		
 		br.close();
