@@ -11,12 +11,14 @@ public class 브루트포스_분해합 {
 
 		String strN = br.readLine();
 		int N = Integer.parseInt(strN);
-		int Nlength = strN.length();
+		int Nlength = strN.length(); //N의 자리수
 		int result = 0;
-
+		
+		//만약 세자리 수 라면
+		//각 자리수의 합의 최대값은 3 * 9 
 		for (int i = N - Nlength * 9; i < N; i++) {
 			int n = i;
-			int sum = 0;
+			int sum = 0; //각 자리수의 합
 
 			while (n != 0) {
 				sum += n % 10;
