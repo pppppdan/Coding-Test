@@ -29,12 +29,12 @@ public class 브루트포스_체스판다시칠하기 {
 		
 		int min = 64;
 		
-		for (int i = 0; i <= N - 8; i++) {
+		for (int i = 0; i <= N - 8; i++) { //체스판
 			for (int j = 0; j <= M - 8; j++) {
 				boolean check = wb[i][j];
 				int cnt = 0;
 				
-				for (int x = i; x < i + 8; x++) {
+				for (int x = i; x < i + 8; x++) { //체스판에서 다시 칠할 정사각형 찾기
 					for (int y = j; y < j + 8; y++) {
 						if (wb[x][y] != check) {
 							cnt++;
