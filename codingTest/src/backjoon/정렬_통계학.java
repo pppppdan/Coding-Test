@@ -20,7 +20,7 @@ public class 정렬_통계학 {
 		}
 		
 		//산술평균 - 소수점 첫째자리에서 반올림
-		System.out.println((int)Math.round((double)sum / N));
+		System.out.println(Math.round((double)sum / N));
 		
 		//중앙값
 		Arrays.sort(num);
