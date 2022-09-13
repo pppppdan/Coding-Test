@@ -33,7 +33,6 @@ public class 집합과맵_문자열집합 {
 		
 		System.out.println(cnt);
 		
-		
 		br.close();
 	}
 

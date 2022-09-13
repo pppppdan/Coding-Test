@@ -8,6 +8,7 @@ import java.util.Comparator;
 import java.util.StringTokenizer;
 
 public class 정렬_나이순정렬 {
+	// 값이 같은 원소의 전후관계가 바뀌지 않는 정렬 알고리즘 - 안정 정렬(stable sort)
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
