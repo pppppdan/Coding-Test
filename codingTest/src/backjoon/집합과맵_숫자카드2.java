@@ -24,7 +24,6 @@ public class 집합과맵_숫자카드2 {
 		Arrays.sort(n);
 		
 		for (int i = 0; i < N; i++) {
-			//중복 개수 카운팅
 			int cnt = 1;
 			int next = 0;
 			
