@@ -16,10 +16,10 @@ public class proLevel2_피보나치수 {
 		fibonacci[1] = 1;
 		
 		for (int i = 2; i < fibonacci.length; i++) {
-			fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+			fibonacci[i] = (fibonacci[i - 1] + fibonacci[i - 2]) % 1234567;
 		}
 		
-		return fibonacci[n] % 1234567;
+		return fibonacci[n];
     }
 
 }
