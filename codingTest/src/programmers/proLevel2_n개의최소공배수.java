@@ -14,10 +14,10 @@ public class proLevel2_n개의최소공배수 {
 		if (arr.length == 1) {
 			return arr[0];
 		} else {
-			answer = euclidean(arr[0], arr[1]);
+			answer = lcm(arr[0], arr[1]);
 			
 			for (int i = 2; i < arr.length; i++) {
-				answer = euclidean(answer, arr[i]);
+				answer = lcm(answer, arr[i]);
 			}
 		}
 		
@@ -27,7 +27,9 @@ public class proLevel2_n개의최소공배수 {
 	//유클리드 호제법 - 두 수의 최대공약수를 구하는 알고리즘
 	//2개의 자연수 a, b (a > b)에 대해 a를 b로 나눈 나머지를 r이라 하면,
 	//a,b의 최대공약수는 r,b의 최대공약수와 같다.
-	public static int euclidean(int n1, int n2) {
+	
+	//두 수의 곱 / 최대공약수 = 최소공배수
+	public static int lcm(int n1, int n2) {
 		int max = Math.max(n1, n2);
         int min = Math.min(n1, n2);
         
