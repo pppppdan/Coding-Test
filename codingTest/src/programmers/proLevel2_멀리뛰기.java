@@ -15,7 +15,11 @@ public class proLevel2_¸Ö¸®¶Ù±â {
         fibo[2] = 2;
         
         for (int i = 3; i < fibo.length; i++) {
-			fibo[i] = (fibo[i - 2] + fibo[i - 1]) % 1234567;
+			fibo[i] = (fibo[i - 2] + fibo[i - 1]);
+			
+			if (i == n) {
+				break;
+			}
 		}
         
         return fibo[n];
